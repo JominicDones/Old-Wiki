@@ -129,6 +129,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/SampleReveal1</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/sidebar</li>
@@ -6217,6 +6219,9 @@ Error message and password prompt
 <div created="20220524012059014" modified="20220524012102066" title="$:/SiteTitle">
 <pre>Jom's D&amp;D World</pre>
 </div>
+<div modified="20220524170222508" title="$:/state/SampleReveal1">
+<pre>hide</pre>
+</div>
 <div modified="20220524025333525" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
@@ -6319,7 +6324,7 @@ Error message and password prompt
 <div modified="20220524023310007" title="$:/state/tag-manager/Towns">
 <pre>closed</pre>
 </div>
-<div list="$:/ControlPanel" title="$:/StoryList">
+<div list="" title="$:/StoryList">
 <pre></pre>
 </div>
 <div modified="20220524021459290" title="$:/temp/advancedsearch">
@@ -6342,8 +6347,8 @@ Error message and password prompt
 <div created="20220524013020141" modified="20220524043328628" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20220524013232503" modified="20220524052036896" title="$:/temp/search">
-<pre>control panel</pre>
+<div created="20220524013232503" modified="20220524170227139" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.9">
 <pre>{
@@ -6530,8 +6535,18 @@ Tertiary education is also widespread, with Universities being some of the oldes
 <div created="20220524022723934" modified="20220524022752626" tags="Places Islands" title="Eil Agannon">
 <pre>This small island lies to the north of Polapno in the middle of the open ocean. It’s quite small, home only to the graves of many saints of Nostaisthima and a large temple dedicated to the same goddess, and is a popular pilgrimmate site for her worshippers.</pre>
 </div>
-<div created="20220524022802266" modified="20220524022815871" tags="Places Islands" title="Eil Grana">
-<pre>Eil Grana, actually two islands, was once, a thousand years ago, home to many peoples’ until the war between Sir Efnisien Talachre and the Apotheists lead to Pope Isambard IV of the Church of Llyr splitting the island in two and defeating Efnisien.</pre>
+<div created="20220524022802266" modified="20220524170218198" tags="Places Islands" title="Eil Grana">
+<pre>Eil Grana, actually two islands, was once, a thousand years ago, home to many peoples. Now it is little more than two large, quite jagged rocks, jutting up from the floor of the [[Blessing|Llŷr’s Blessing]], home mostly to nesting birds.
+
+&lt;$button set=&quot;$:/state/SampleReveal1&quot; setTo=&quot;show&quot;&gt;Show Spoilers&lt;/$button&gt;
+
+&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/SampleReveal1&quot; text=&quot;show&quot;&gt;
+
+It used to be a single island, until the war between Sir Efnisien Talachre and the Apotheists lead to Pope Isambard IV of the Church of Llyr splitting the island in two and defeating Efnisien.
+
+&lt;/$reveal&gt;
+&lt;$button set=&quot;$:/state/SampleReveal1&quot; setTo=&quot;hide&quot;&gt;Hide&lt;/$button&gt;
+</pre>
 </div>
 <div created="20220524023519689" modified="20220524033657826" tags="Races" title="Elf">
 <pre>Elvish people are very different depending on their upbringing. Elves raised in old elvish societies, such as the [[Misty Forest Elves]] are more likely to be innate practitioners of magic; their grace and beauty matching the stories of old.
